@@ -1,14 +1,43 @@
-.home-content{
-    width: 100vw;
-    height: 100vh;
-
-    background-color: rgb(35, 35, 34);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.dropdown:hover>.dropdown-menu {
+:root{
+   
+    --font-main: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.home-image{
+    
+    width: 100vw;
+    position: relative;
+ 
+    
+    color: white;
+ font-family: var(--font-main);
+    height: 63vh;
+    background: url(./img/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg)no-repeat center center/cover;
+    background-size: 100vw 63;
+}
+.home-image .content{
+    display: grid;
+    position: relative;
+    top: 19px;
+    text-align: center;
+    grid-template-rows: 53px 50px 133px;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
+}
+
+/* .dropdown:hover>.dropdown-menu {
     display: block;
   }
   
   .dropdown>.dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
       pointer-events: none;
-  }
+  } */
