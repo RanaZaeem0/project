@@ -7,6 +7,78 @@
    
     --font-main: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+/* Utility class */
+.image-upper-content{    display: grid;
+    position: relative;
+    font-family: var(--font-main);
+    top: 19px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    grid-template-rows: 73px 17px 53px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-upper-content h3{
+    font-weight: 600;
+    margin-bottom: px;
+}
+.image-upper-content h4{
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 1px;
+}
+.image-upper-content a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin: 10px;
+}
+.image-lower-content{
+    display: flex;
+    position: relative;
+    font-family: var(--font-main);
+    text-decoration: none;
+    /* top: 112px; */
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    justify-content: flex-end;
+    height: 79vh;
+    padding: 10px;
+
+} 
+.image-lower-content h3{
+    font-weight: 600;
+    margin-bottom: px;
+}
+.image-lower-content h4{
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 1px;
+}
+.image-lower-content a{
+    text-decoration: none;
+    font-size: 0.7rem;
+    margin: 10px;
+}               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                            Home Content */
 .home-image{
     
     width: 100vw;
@@ -17,19 +89,150 @@
  font-family: var(--font-main);
     height: 63vh;
     background: url(./img/hero_iphone15pro__i70z9oz3hj2i_small_2x.jpg)no-repeat center center/cover;
-    background-size: 100vw 63;
+    background-size: 100vw 63vh;
 }
-.home-image .content{
+.home-image .image-upper-content{
     display: grid;
     position: relative;
+    font-family: var(--font-main);
     top: 19px;
     text-align: center;
+    color: white;
     grid-template-rows: 53px 50px 133px;
     justify-content: center;
     align-items: center;
 }
-li a{
+/*                                                 Vision  css */
+.vision-image{
+  width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 80vh;
+    background: url(./img/hero_apple_vision_pro_avail__ecthwv10twsy_small.jpg)no-repeat center center/cover;
+    background-size: 166vw 80vh;
+}
+
+/*                                                            Event css */
+
+
+.event-image{
+    background: url(./img/hero_valentines_day_2024__dyne8c2no3ki_small_2x.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+ font-family: var(--font-main);
+    height: 80vh;
+    background-size: 166vw 80vh;
+}
+
+
+/*                                             contaienr css */
+.container-event{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+/* .container-event .box{
+width: 100vw;
+height: 65vh;
+} */
+.container-event .box-1-image{
+    background: url(./img/promo_iphone15_announce__fmxxi8r9fkuy_small.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;
+    
+}
+
+
+.container-event .box-2-image{
+    background:url(./img/promo_apple_watch_series_9_order__b3u85rm9zf6u_small.jpg) no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;
+}
+.container-event .box-2-image .image-upper-content{
+    color: white;
+}
+.container-event .box-3-image{
+    background:url(./img/promo_mbp__ek7p477bkp6q_small.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;}
+.container-event .box-4-image{
+    background:url(./img/promo_ipad__fioegapg12qi_small.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;
+}
+.container-event .box-5-image{
+    background:url(./img/tile__cauwwcyyn9hy_small.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;
+}
+.container-event .box-6-image{
+    background:url(./img/promo_iphone_tradein__bugw15ka691e_small.jpg)no-repeat center center/cover;
+    width: 100vw;
+    position: relative;
+    color: white;
+    font-family: var(--font-main);
+    height: 95vh;
+    background-size: 157vw 105vh;
+}
+
+/*                       Cursol TV event */
+
+.container-tv{
+    width: 100vw;
+    height: 500px;
+    position: relative;
+}
+
+
+/*                                footer */
+
+footer{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+}
+footer p{
+    font-size: .6rem;
+}
+
+.footer-first ul{
+    padding-left: 0.2rem;
+}
+.footer-first ul li {
+list-style: none !important;
+}
+
+
+
+
+
+a{
     font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-decoration: none;
 
 }
 
